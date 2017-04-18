@@ -21,5 +21,5 @@ class EchoFactory(protocol.ClientFactory):
         print("conection lost")
         reactor.stop()
 
-reactor.connectTCP("localhost",8001,EchoFactory())
+reactor.connectTCP("localhost",8000,EchoFactory())
 reactor.run()
